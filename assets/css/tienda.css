@@ -1,0 +1,250 @@
+
+.contenedor{
+  background-color: white;
+  margin: auto;
+  display: flex;
+  padding-top: 10px;
+  border-radius: 10px;
+  width: 90%;
+  height: 95%;
+}
+.aside{
+  border-radius: 10px 0px 0px 10px;
+  width: 20%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.aside > ul{
+  padding-left: 15px;
+}
+.aside > ul > li{
+  background-color: #eee;
+  cursor:pointer;
+  padding-left: 5px;
+  width: 100%;
+  height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  list-style: none;
+}
+.aside > ul > li:nth-child(2n+1){
+  background-color: #ddd;
+}
+.aside > ul > li:hover{
+  background-color: #BBB;
+  cursor:pointer;
+  margin-left: 10px;
+  padding-left: 15px;
+  height: 40px;
+  width: 100%;
+  text-decoration: none;
+  list-style: none;
+}
+.contenido{
+  background-color: #EEE;
+  display: flex;
+  padding-left: 20px;
+  padding-top: 10px;
+  width: 77%;
+  height: 100%;
+}
+.catalogodiv{
+  width: 100%;
+  display: flex;
+  height: 100%;
+}
+.catalogodiv > .item{
+  background-color: white;
+  width: 49%;
+  height: 100%;
+  text-align: center;
+  padding: 10px;
+}
+.catalogodiv > .comp{
+  background-color: white;
+  width: 98%;
+  height: 100%;
+  padding: 10px;
+  position: relative;
+}
+label{
+  margin: 10px;
+}
+.lventa{
+  margin-left: 50%;
+  margin-right: 50%;
+}
+.comp > .lreporte{
+  margin-left: 40%;
+  display: inline;
+  text-align: center;
+}
+.catalogodiv > .item > input{
+  margin: 10px;
+}
+#sel{
+  margin: 10px;
+  width: 120px;
+}
+.catalogodiv > .comp > input, #add, #total, #desc{
+  margin: 10px;
+}
+.catalogodiv > .comp > #recibo, #nombre{
+  align-items: flex-start;
+}
+.catalogodiv > .comp > #total,  #vdesc1, #fact1{
+  margin: 10px;
+  position: absolute;
+  right: 200px;
+}
+.catalogodiv > .comp > #gane, #vdesc, #fventa{
+  margin: 10px;
+  position: absolute;
+  right: 10px;
+}
+.checkv{
+  margin: 10px;
+  position: absolute;
+  right: 200px;
+}
+#libre{
+  width: 100px;
+  margin: 10px;
+  position: absolute;
+  right: 435px;
+}
+#uno, #dos, #tres, #cuatro, #texto{
+  margin-left: 25px;
+}
+#sele{
+  width: 100px;
+}
+.catalogodiv > .comp > #fact1{
+  margin: 10px;
+  position: absolute;
+  right: 10px;
+  color: #fff;
+background-color: #337ab7;
+border-color: #2e6da4;
+}
+#fact2{
+  margin-right: 50px;
+  position: absolute;
+  right: 10px;
+  color: #fff;
+background-color: #337ab7;
+border-color: #2e6da4;
+}
+.catalogodiv > .comp > #fact{
+  position: absolute;
+  right: 200px;
+  bottom: -30.3px;
+  color: #fff;
+background-color: #337ab7;
+border-color: #2e6da4;
+}
+.btng{
+  color: #fff;
+background-color: #f0ad4e;
+border-color: #eea236;
+cursor: pointer;
+border-radius: 4px;
+padding: 6px 12px;
+margin-bottom: 50px;
+width: 140px;
+font-size: 14px;
+font-weight: 400;
+}
+.modal-header {
+  display: flex;
+  padding: 1rem;
+  height: 63px;
+}
+.modal-title {
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-size: 2.25rem;
+}
+.close{
+float: right;
+overflow: visible;
+padding: 1rem;
+margin: -1rem 1rem 10rem auto;
+font-size: 2.5rem;
+font-weight: 700;
+line-height: 1;
+color: #000;
+text-shadow: 0 1px 0 #fff;
+opacity: .5;
+}
+#load, #loadC{
+  margin: 10px;
+}
+.catalogodiv > .comp > #venta{
+  position: absolute;
+  right: 30px;
+}
+.catalogodiv > .item > button{
+  margin: 10px;
+}
+.catalogodiv > .item > #buscar{
+  position: fixed !important;
+  margin-top: 10px;
+  margin-left: 0px;
+  height: 27px;
+  width: 46px;
+  font-size: 18px;
+color: white;
+background-color: #00adef;
+}
+#checkbox2{
+  margin-left: 25px;
+}
+#buscar{
+  position: fixed !important;
+  margin-top: 10px;
+  margin-left: 0px;
+  height: 27px;
+  width: 46px;
+  font-size: 18px;
+color: white;
+background-color: #00adef;
+}
+.catalogodiv > .mostraritem{
+  overflow-y: scroll;
+  margin: 5px;
+  width: 49%;
+  max-height: 700px;
+}
+@media only screen and (max-width: 1920px) and (min-width: 1440px) {
+    .catalogodiv > .item{
+      background-color: white;
+      width: 49%;
+      height: 100%;
+      text-align: center;
+      padding: 10px;
+    }
+  #itkpro, #itkcli, #itkprov, #itkcom{
+    text-align: left;
+    width: 88px;
+  }
+  #itkcom{
+    text-align: left;
+    width: 98px;
+  }
+}
+@media only screen and (max-width: 1439px) {
+  #itkpro, #itkcli, #itkprov, #itkcom{
+    display: none;
+    text-align: left;
+    width: 88px;
+  }
+  #itkcom{
+    display: none;
+    text-align: left;
+    width: 98px;
+  }
+
+}
