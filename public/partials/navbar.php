@@ -27,7 +27,7 @@
                 <a href="#" id="info" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" ><?php echo $_SESSION['name_usuario']; ?> </a>
             </li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" id="info1" data-toggle="dropdown" role="button" aria-haspopup="true" <?php if(str_contains($_SERVER["REQUEST_URI"], 'config.php')){?>style="color: white;background: red;border-radius: 25px;" <?php } ?> ><i class="fa fa-gear fa-fw"></i> Ajustes  <i class="fa fa-caret-down"></i></a>
+              <a href="#" class="dropdown-toggle" id="info1" data-toggle="dropdown" role="button" aria-haspopup="true" <?php if(strpos($_SERVER["REQUEST_URI"], 'config.php')){?>style="color: white;background: red;border-radius: 25px;" <?php } ?> ><i class="fa fa-gear fa-fw"></i> Ajustes  <i class="fa fa-caret-down"></i></a>
                 <ul class="dropdown-menu">
                   <li><a href="config.php"><i class="fa fa-fw fa-user"></i>Perfil</a></li>
                   <li><a href="../app/controller/logout.php">Salir</a></li>
@@ -37,25 +37,25 @@
 
           <ul class="nav navbar-nav ">
           <li>
-              <a href="index.php" <?php if(str_contains($_SERVER["REQUEST_URI"], 'index.php')){?> class="active" <?php } ?>>Home</a>
+              <a href="index.php" <?php if(strpos($_SERVER["REQUEST_URI"], 'index.php')){?> class="active" <?php } ?>>Home</a>
             </li>
              
             <li>
-              <a href="facturas.php" <?php if(str_contains($_SERVER["REQUEST_URI"], 'facturas.php')){?> class="active" <?php } ?>>Facturas</a>
+              <a href="facturas.php" <?php if(strpos($_SERVER["REQUEST_URI"], 'facturas.php')){?> class="active" <?php } ?>>Facturas</a>
             </li>
              
 <?php   if ($_SESSION['rol_user'] == 1) { ?>
             <li>
-                <a href="cliente.php"  <?php if(str_contains($_SERVER["REQUEST_URI"], 'cliente.php')){?> class="active" <?php } ?>>Clientes</a>
+                <a href="cliente.php"  <?php if(strpos($_SERVER["REQUEST_URI"], 'cliente.php')){?> class="active" <?php } ?>>Clientes</a>
             </li>
             <li>
-                <a href="reportes.php"  <?php if(str_contains($_SERVER["REQUEST_URI"], 'reportes.php')){?> class="active" <?php } ?> >Reportes</a>
+                <a href="reportes.php"  <?php if(strpos($_SERVER["REQUEST_URI"], 'reportes.php')){?> class="active" <?php } ?> >Reportes</a>
             </li>
             <li >
-                <a href="user.php"  <?php if(str_contains($_SERVER["REQUEST_URI"], 'user.php')){?> class="active" <?php } ?>>Usuarios</a>
+                <a href="user.php"  <?php if(strpos($_SERVER["REQUEST_URI"], 'user.php')){?> class="active" <?php } ?>>Usuarios</a>
             </li>
             <li >
-                <a href="contratos.php"  <?php if(str_contains($_SERVER["REQUEST_URI"], 'contratos.php')){?> class="active" <?php } ?>>Contratos</a>
+                <a href="contratos.php"  <?php if(strpos($_SERVER["REQUEST_URI"], 'contratos.php')){?> class="active" <?php } ?>>Contratos</a>
             </li>
 <?php  }  ?>
 
